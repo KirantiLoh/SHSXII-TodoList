@@ -373,6 +373,10 @@ header ul li {
 #add-btn:hover,
 #back-btn:hover {
     width: 120px;
+    color: #190725;
+    background-color: #fff;
+    background-image: none;
+    border-color: #910e24;
 }
 
 .register,
@@ -519,6 +523,11 @@ p {
     color: #fff;
 }
 
+#no-lists {
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -553,6 +562,13 @@ p {
         text-align: center;
         align-self: center;
         margin: 10px auto;
+    }
+    .search:hover {
+        width: 85vw;
+        border: 4px #910e24 solid;
+        background-image: none;
+        background-color: #fff;
+        color: #190725;
     }
     #id_title_search {
         width: 70vw;
