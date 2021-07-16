@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,4 +145,4 @@ LOGIN_REDIRECT_URL = 'Create'
 
 LOGOUT_REDIRECT_URL = 'Home'
 
-
+django_heroku.settings(locals())
