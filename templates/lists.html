@@ -7,10 +7,15 @@
 <input type='submit' value='Search' id='search-btn'>
 </form>
 <hr>
+{% if lists %}
 {% for list in lists %}
 <div class="items">
 <p><a href={% url 'List' list.pk %}>{{list.title}}</a> - {{list.author}} - {{list.created_date}}</p>
 <a href={% url 'Delete List' list.pk %} id='del'>X</a>
 </div>
 {% endfor %}
+{% else %}
+<p>No list were made, create one <a href={% url 'Create' %} class='link-rl'>here</a>
+{% endif %}
+
 {% endblock content %}

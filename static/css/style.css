@@ -515,6 +515,10 @@ footer {
     display: none;
 }
 
+p {
+    color: #fff;
+}
+
 @keyframes typing {
     from {
         width: 0;

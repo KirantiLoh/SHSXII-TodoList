@@ -9,7 +9,7 @@ def register_view(request):
 
         if form.is_valid():
             form.save()
-            return redirect("Home")
+            return redirect("login")
 
     else:
         form = RegisterForm
