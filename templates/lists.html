@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method=POST class='search'>
+{% csrf_token %}
+{{form}}
+<input type='submit' value='Search' id='search-btn'>
+</form>
+<hr>
+{% for list in lists %}
+<div class="items">
+<p><a href={% url 'List' list.pk %}>{{list.title}}</a> - {{list.author}} - {{list.created_date}}</p>
+<a href={% url 'Delete List' list.pk %} id='del'>X</a>
+</div>
+{% endfor %}
+{% endblock content %}

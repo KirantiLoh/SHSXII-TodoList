@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='top-section' id='two'>
+<p id='username'>{{user.username}}'s Profile</p>
+</div>
+<hr>
+<div class='profile'>
+<p><a href={% url 'password_change' %} class='link' id='change-password'>Change your password</a></p>
+<p><a href={% url 'password_reset' %} class='link' id='change-password'>Reset your password</a></p>
+</div>
+{% endblock content %}

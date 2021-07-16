@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='top-section' id='list-top'>
+<div class='list-detail'>
+<p id='list_title'>{{list.title}}</p>{{list.author}} - {{list.created_date}}
+</div>
+<form method='POST' class= 'add-item'>
+{% csrf_token %}
+<h3>Add Items</h3>
+{{form.as_p}}
+<input type='submit' value="Add" id='add-btn'>
+<a href = {% url 'Lists' %} id='back-btn'>Back</a>
+</form>
+</div>
+{% for item in items %}
+<div class='items'>
+{% if item.is_urgent %}
+<p>{{item.content}} - URGENT</p>
+{% else %}
+<p>{{item.content}}</p>
+{% endif %}
+<a href = {% url 'Delete Item' list.pk item.pk %} id='del'>X</a>
+</div>
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='fullscreen'>
+<video loop muted autoplay>
+<source src={% static 'images\background_video.mp4' %} type="video/mp4">
+</video>
+<div class='start-plan'>
+<p id='plan'>Start Planning</p>
+<a href={% url 'Get Started' %} id='get-started'>Get Started</a>
+</div>
+</div>
+<div class='team'>
+<h2>Meet Our Team</h2>
+<div class='profile-card'>
+<img src={% static 'images/beban/tanaman.png' %}>
+<a href='//www.instagram.com/valenciathania_/' target='_blank'>Valencia Thania Halim</a>
+<p class='kelas'>SHS XII Social</p>
+</div>
+<div class='profile-card'>
+<img src={% static 'images/beban/dukun.png' %}>
+<a href='//www.instagram.com/pasanta1712/' target='_blank'>Nicholas Pratama</a>
+<p class='kelas'>SHS XII Science</p>
+</div>
+<div class='profile-card'>
+<img src={% static 'images/hard carry.png' %}>
+<a href='//www.instagram.com/maurice_yang/' target='_blank'>Maurice Yang</a>
+<p class='kelas'>SHS XII Science</p>
+</div>
+<div class='profile-card'>
+<img src={% static 'images/beban/badak bercula.png' %}>
+<a href='//www.instagram.com/dakpour.id/' target='_blank'>Sheren Wijaya</a>
+<p class='kelas'>SHS XII Science</p>
+</div>
+<div class='profile-card'>
+<img src={% static 'images\beban\pritong.png' %}>
+<a href='//www.instagram.com/pritaa.f_/' target='_blank'>Prita Falenshia</a>
+<p class='kelas'>SHS XII Science</p>
+</div>
+<div class='filler'>
+<h1>SHS XII Mutiara Bangsa 3</h1>
+</div>
+</div>
+{% endblock content %}
