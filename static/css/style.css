@@ -547,7 +547,7 @@ p {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width:450px) {
     header h1,
     header ul {
         text-align: center;
@@ -590,5 +590,11 @@ p {
         margin: 10px auto;
         float: none;
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .link {
+        font-size: small;
     }
 }

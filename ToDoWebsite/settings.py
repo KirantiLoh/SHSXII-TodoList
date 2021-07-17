@@ -145,4 +145,6 @@ LOGIN_REDIRECT_URL = 'Create'
 
 LOGOUT_REDIRECT_URL = 'Home'
 
+USE_TZ = True
+
 django_heroku.settings(locals())
