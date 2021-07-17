@@ -591,9 +591,6 @@ p {
         float: none;
         text-align: left;
     }
-    .items p {
-        font-size: 10px;
-    }
 }
 
 @media screen and (max-width: 450px) {
