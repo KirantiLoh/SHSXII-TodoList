@@ -564,7 +564,7 @@ p {
         margin: 10px auto;
     }
     #id_title_search:focus {
-        width: 85vw;
+        width: 75vw;
         border: 4px #910e24 solid;
         background-image: none;
         background-color: #fff;
