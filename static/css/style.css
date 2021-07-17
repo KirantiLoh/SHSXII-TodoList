@@ -547,7 +547,7 @@ p {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (max-width: 800px) {
     header h1,
     header ul {
         text-align: center;
@@ -563,7 +563,7 @@ p {
         align-self: center;
         margin: 10px auto;
     }
-    .search:hover {
+    #id_title_search:focus {
         width: 85vw;
         border: 4px #910e24 solid;
         background-image: none;
@@ -591,10 +591,62 @@ p {
         float: none;
         text-align: left;
     }
+    .items p {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 450px) {
+    header h1,
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    #plan {
+        font-size: 50px;
+    }
+    .search {
+        width: 80vw;
+        float: none;
+        text-align: center;
+        align-self: center;
+        margin: 10px auto;
+    }
+    #id_title_search {
+        width: 70vw;
+    }
+    #id_title_search:focus {
+        width: 85vw;
+        border: 4px #910e24 solid;
+        background-image: none;
+        background-color: #fff;
+        color: #190725;
+    }
+    .top-section {
+        text-align: center;
+    }
+    .list-detail {
+        float: none;
+        text-align: center;
+    }
+    #list-title {
+        font-size: 10px;
+    }
+    #list-top {
+        margin: 10px auto;
+    }
+    .add-item {
+        margin: 10px auto;
+        float: none;
+        text-align: left;
+    }
     .link {
         font-size: small;
+    }
+    .items p {
+        font-size: 12px;
+    }
+    #del {
+        font-size: 15px;
     }
 }
