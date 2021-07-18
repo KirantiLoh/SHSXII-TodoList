@@ -3,7 +3,7 @@
 {% block content %}
 <div class='top-section' id='list-top'>
 <div class='list-detail'>
-<p id='list_title'>{{list.title}}</p>{{list.author}} - {{list.created_date}}
+<p id='list_title'>{{list.title}}</p>{{list.created_date}}
 </div>
 <form method='POST' class= 'add-item'>
 {% csrf_token %}

@@ -10,7 +10,7 @@
 {% if lists %}
 {% for list in lists %}
 <div class="items">
-<p><a href={% url 'List' list.pk %}>{{list.title}}</a> - {{list.author}} - {{list.created_date}}</p>
+<p><a href={% url 'List' list.pk %}>{{list.title}}</a> - {{list.created_date}}</p>
 <a href={% url 'Delete List' list.pk %} id='del'>X</a>
 </div>
 {% endfor %}
